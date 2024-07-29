@@ -20,6 +20,4 @@ export function searchPhotoByQuery(query) {
     return response.json();
   });
 }
-searchPhotoByQuery('yellow')
-  .then(data => console.log(data))
-  .catch(console.log);
+// console.log(searchPhotoByQuery('yellow'));
