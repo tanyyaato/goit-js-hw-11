@@ -21,14 +21,24 @@ export function markUpRequest(hits) {
         return `<li class = "list-item">
   <a href="${largeImageURL}">
     <div class = "preview-photo"><img src="${webformatURL}" alt="${tags}"></div>
-    <h2 >Likes</h2>
-    <p>${likes}</p>
-    <h2>Views</h2>
-    <p>${views}</p>
-    <h2>Comments</h2>
-    <p>${comments}</p>
-    <h2>Downloads</h2>
-    <p>${downloads}</p>
+     <ul class="img-desc">
+    <li>
+      <h2>Likes</h2>
+      <p>${likes}</p>
+    </li>
+    <li>
+      <h2>Views</h2>
+      <p>${views}</p>
+    </li>
+    <li>
+      <h2>Comments</h2>
+      <p>${comments}</p>
+    </li>
+    <li>
+      <h2>Downloads</h2>
+      <p>${downloads}</p>
+    </li>
+  </ul>
   </a>
 
 </li>`;
