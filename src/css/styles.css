@@ -43,6 +43,7 @@ p {
   flex-flow: row wrap;
   column-gap: 18px;
   row-gap: 24px;
+  justify-content: center;
 }
 .form {
   display: flex;

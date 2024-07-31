@@ -6,7 +6,6 @@ const lightbox = new SimpleLightbox('.list  a', {
   captionsData: 'alt',
 });
 export function markUpRequest(hits) {
-  picturesList.innerHTML = '';
   const markUp = hits
     .map(
       ({

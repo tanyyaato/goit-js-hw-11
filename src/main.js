@@ -3,6 +3,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { markUpRequest } from './js/render-function.js';
 import { searchPhotoByQuery } from './js/pixabay-api.js';
+const picturesList = document.querySelector('.list');
 const loader = document.querySelector('.loader');
 const form = document.querySelector('.js-form');
 loader.style.display = 'none';
@@ -10,6 +11,7 @@ form.addEventListener('submit', searchQuery);
 //
 function searchQuery(event) {
   event.preventDefault();
+  picturesList.innerHTML = '';
   const inputValue = event.target.request.value.trim().toLowerCase();
   if (!inputValue) {
     return;
